@@ -18,7 +18,7 @@ if (!container) {
     newItem.style.top = `${y - size / 2}px`;
 
     const img = document.createElement("img");
-    img.src = `../cursor_imgs/${imageIndex}.png`;
+    img.src = `../cursor_imgs/${imageIndex}.webp`;
     img.style.objectFit = "cover";
     newItem.appendChild(img);
 

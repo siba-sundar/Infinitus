@@ -6,7 +6,7 @@ const frameInterval = 1000 / fps; // Time interval between frames (50ms for 20 F
 
 // Load all the image paths into the array
 for (let i = 1; i <= totalFrames; i++) {
-    faviconImages.push(`../favicon/${i}.png`); // Assuming the images are named favicon.1.png, favicon.2.png, etc.
+    faviconImages.push(`../favicon/${i}.webp`); // Assuming the images are named favicon.1.png, favicon.2.png, etc.
 }
 
 // Create a <link> element to hold the favicon
