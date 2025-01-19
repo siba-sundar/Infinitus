@@ -91,8 +91,8 @@
   .footerBottom {
     margin-top: 5%;
   }
-  .questionsList{
-    font-size: 2vw;
+  .questionItem{
+    font-size: 1.3vw;
   }
   .backToQuestionsButton{
     font-size: 1.3vw;
@@ -224,6 +224,7 @@
     display: block;
     font-size: 10px;
   }
+
   
 
 }
@@ -232,6 +233,7 @@
   #hidden-card{
     display: none;
   }
+  
 }
 
 @media screen and (max-width: 900px) {
@@ -247,6 +249,10 @@
 
  
   .backToOptionsButton{
+    font-size: 2vw;
+  }
+
+  .questionItem{
     font-size: 2vw;
   }
   
@@ -302,6 +308,9 @@
 
   .menu-links-new-2 a {
     font-size: 4vw;
+  }
+  .questionItem{
+    font-size: 3.2vw;
   }
 
   
