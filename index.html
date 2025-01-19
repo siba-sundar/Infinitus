@@ -26,7 +26,7 @@
 
     <img src="/assets/noise-2.gif" class="noise">
 
-    
+
     <div class="section-1">
 
         <nav class="navbar href-music">
@@ -56,7 +56,7 @@
                         <source src="./assets/cyber-3.mp4" type="video/mp4">
                     </video>
                 </div>
-    
+
                 <!-- Right Column -->
                 <div class="menu-right">
                     <div class="close-container">
@@ -71,7 +71,7 @@
                             <a href="/public/teams.html" class="text">Team</a>
                             <a href="/public/faq.html" class="text">FAQ</a>
                         </div>
-    
+
                     </div>
                     <div class="menu-links-new-2">
                         <div class="column">
@@ -147,32 +147,42 @@
         <br>
         <br><br>
         <div class="about-grid">
-          <div class="about-left"></div>
-          <div class="about-right">
-            <p>
+            <div class="about-left"></div>
+            <div class="about-right">
+                <p>
 
-               <span class="about-us-txt">About '25</span>
-                <br><br> 
-                <span class="about-us-para">
-              The 2024 edition of Infinitus raised the bar even higher in the realm of cultural festivities, bringing together an extraordinary gathering of over 12,000 students from diverse disciplines and backgrounds. This year’s event radiated unparalleled energy, with over 6,000 participants actively engaging in a wide range of competitions, performances, and showcases, exemplifying creativity, innovation, and collaboration.
-      
-              The digital outreach of Infinitus ’24 shattered all previous records, amassing over 20,000 interactions across social media platforms. 
-              <br>
-              <br>Attendees shared their thrilling experiences, creating a ripple effect of excitement that reached global audiences. The official website continued to thrive as a hub of real-time updates, drawing in over 7,000 visitors and reinforcing the festival's status as a highly anticipated event.
-      
-              Infinitus ’24 didn’t just celebrate cultures—it set a new precedent for creativity and excellence, leaving an indelible mark on the legacy of this grand fest. With its ambitious vision and execution, it truly paved the way for an even more vibrant future.
+                    <span class="about-us-txt">About '25</span>
+                    <br><br>
+                    <span class="about-us-para">
+                        The 2024 edition of Infinitus raised the bar even higher in the realm of cultural festivities,
+                        bringing together an extraordinary gathering of over 12,000 students from diverse disciplines
+                        and backgrounds. This year’s event radiated unparalleled energy, with over 6,000 participants
+                        actively engaging in a wide range of competitions, performances, and showcases, exemplifying
+                        creativity, innovation, and collaboration.
+
+                        The digital outreach of Infinitus ’24 shattered all previous records, amassing over 20,000
+                        interactions across social media platforms.
+                        <br>
+                        <br>Attendees shared their thrilling experiences, creating a ripple effect of excitement that
+                        reached global audiences. The official website continued to thrive as a hub of real-time
+                        updates, drawing in over 7,000 visitors and reinforcing the festival's status as a highly
+                        anticipated event.
+
+                        Infinitus ’24 didn’t just celebrate cultures—it set a new precedent for creativity and
+                        excellence, leaving an indelible mark on the legacy of this grand fest. With its ambitious
+                        vision and execution, it truly paved the way for an even more vibrant future.
                     </span>
-            </p>
-          </div>
+                </p>
+            </div>
         </div>
         <br>
         <br>
         <br><br>
-      </div>
+    </div>
 
-      
-      
-      <div class="section-2">
+
+
+    <div class="section-2">
 
         <div class="grid-container sponsors">
             <div class="grid-item">
@@ -299,7 +309,37 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
     <script src="https://unpkg.com/lenis@1.1.14/dist/lenis.min.js"></script>
 
-    <script src="/scripts/favicon.js"></script>
+    <script>
+        const faviconImages = []; // Array to hold the image paths
+        const totalFrames = 20;    // Total number of frames (from favicon.1.png to favicon.20.png)
+        let faviconIndex = 0;      // Current index of the frame
+        const fps = 4;            // Frames per second
+        const frameInterval = 1000 / fps; // Time interval between frames (50ms for 20 FPS)
+
+        // Load all the image paths into the array
+        for (let i = 1; i <= totalFrames; i++) {
+            faviconImages.push(`./favicon/${i}.png`); // Assuming the images are named favicon.1.png, favicon.2.png, etc.
+        }
+
+        // Create a <link> element to hold the favicon
+        const faviconElement = document.createElement('link');
+        faviconElement.rel = 'icon';
+        document.head.appendChild(faviconElement);
+
+        // Function to update the favicon
+        function updateFavicon() {
+            faviconElement.href = faviconImages[faviconIndex]; // Set the current favicon
+
+            // Increment the index (loop back to the first frame when reaching the last one)
+            faviconIndex = (faviconIndex + 1) % totalFrames;
+        }
+
+        // Set up the interval to change the favicon at the desired frame rate (20 FPS)
+        setInterval(updateFavicon, frameInterval);
+    </script>
+
+
+
     <script src="/scripts/loading-main.js"></script>
     <script src="/scripts/cursor.js"></script>
     <script src="/scripts/menu.js"></script>
@@ -310,5 +350,6 @@
     <script src="/scripts/cursor-follow.js"></script>
     <script src="/scripts/link-hover.js"></script>
     <script src="/scripts/music.js"></script>
-    </body>
-    </html>
+</body>
+
+</html>

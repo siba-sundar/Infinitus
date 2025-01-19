@@ -2063,6 +2063,8 @@ marquee {
   letter-spacing: 1px;
   word-spacing: 120px;
   line-height: 60px;
+  object-fit: contain;
+
 }
 
 
