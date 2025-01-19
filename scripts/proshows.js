@@ -105,8 +105,43 @@ document.addEventListener("keydown", (event) => {
   }
 });
 
+// Touch/swipe functionality for mobile devices
+let startX = 0;
+let isTouching = false;
+
+carousel.addEventListener("touchstart", (event) => {
+  startX = event.touches[0].clientX;
+  isTouching = true;
+});
+
+carousel.addEventListener("touchmove", (event) => {
+  if (!isTouching) return;
+  const touchEndX = event.touches[0].clientX;
+
+  // Calculate the distance moved
+  const distance = touchEndX - startX;
+
+  // Swipe threshold to trigger scroll (you can adjust this value if needed)
+  const swipeThreshold = 50;
+
+  // Detect left or right swipe
+  if (Math.abs(distance) > swipeThreshold) {
+    if (distance < 0) {
+      scrollCarousel("right");
+    } else {
+      scrollCarousel("left");
+    }
+
+    // Stop further touchmove until the swipe completes
+    isTouching = false;
+  }
+});
+
+carousel.addEventListener("touchend", () => {
+  isTouching = false;
+});
+
 // Initialize the carousel with opacity set for proper transitions
 document.querySelectorAll(".carousel-item").forEach((item, index) => {
   gsap.set(item, { opacity: index === 0 ? 1 : 0 }); // Only the first item is fully visible initially
 });
-
