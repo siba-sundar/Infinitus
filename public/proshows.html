@@ -144,6 +144,14 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/CustomEase.min.js"></script>
 
 
+    
+    <script src="/scripts/cursor.js"></script>
+    <script src="/scripts/menu.js"></script>
+    <script src="/scripts/time.js"></script>
+    <script src="/scripts/proshows.js"></script>
+
+    <script src="/scripts/link-hover.js"></script>
+    <script src="/scripts/music.js"></script>
     <script>
         const faviconImages = []; // Array to hold the image paths
         const totalFrames = 20;    // Total number of frames (from favicon.1.png to favicon.20.png)
@@ -153,7 +161,7 @@
 
         // Load all the image paths into the array
         for (let i = 1; i <= totalFrames; i++) {
-            faviconImages.push(`./favicon/${i}.png`); // Assuming the images are named favicon.1.png, favicon.2.png, etc.
+            faviconImages.push(`../favicon/${i}.png`); // Assuming the images are named favicon.1.png, favicon.2.png, etc.
         }
 
         // Create a <link> element to hold the favicon
@@ -172,13 +180,6 @@
         // Set up the interval to change the favicon at the desired frame rate (20 FPS)
         setInterval(updateFavicon, frameInterval);
     </script>
-    <script src="/scripts/cursor.js"></script>
-    <script src="/scripts/menu.js"></script>
-    <script src="/scripts/time.js"></script>
-    <script src="/scripts/proshows.js"></script>
-
-    <script src="/scripts/link-hover.js"></script>
-    <script src="/scripts/music.js"></script>
 </body>
 
 </html>
