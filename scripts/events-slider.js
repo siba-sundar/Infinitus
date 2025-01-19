@@ -6,7 +6,7 @@ let culturalEase = 0.075;
 let velocity = 0; // current speed
 let friction = 0.8; // how quickly the velocity slows
 let velocityMultiplier = 0.2; // scales how much deltaY affects velocity
-let mobileVelocityMultiplier = 0.15; // Slows down velocity for mobile
+let mobileVelocityMultiplier = 0.05; // Slows down velocity for mobile
 
 const culturalSlider = document.querySelector(".slider");
 const culturalSliderWrapper = document.querySelector(".slider-wrapper");

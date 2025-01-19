@@ -91,6 +91,17 @@
   .footerBottom {
     margin-top: 5%;
   }
+  .questionsList{
+    font-size: 2vw;
+  }
+  .backToQuestionsButton{
+    font-size: 1.3vw;
+  }
+
+ 
+  .backToOptionsButton{
+    font-size: 1.3vw;
+  }
 }
 
 /* 400px screen width  */
@@ -110,6 +121,15 @@
 
   #flicker {
     font-size: 7vw;
+  }
+
+  .backToQuestionsButton{
+    font-size: 5vw;
+  }
+
+ 
+  .backToOptionsButton{
+    font-size: 5vw;
   }
 }
 
@@ -157,6 +177,8 @@
   .desc-text {
     line-height: 2vh;
   }
+
+
 }
 
 @media screen and (max-width: 600px) {
@@ -216,6 +238,18 @@
   .faqButton {
     font-size: 3vw;
   }
+  .questionsItem{
+    font-size: 3vw;
+  }
+  .backToQuestionsButton{
+    font-size: 2vw;
+  }
+
+ 
+  .backToOptionsButton{
+    font-size: 2vw;
+  }
+  
 }
 
 
@@ -269,6 +303,8 @@
   .menu-links-new-2 a {
     font-size: 4vw;
   }
+
+  
 }
 
 /* proshows media queries */
@@ -391,6 +427,15 @@
     width: 300px;
     text-align: left;
   }
+
+  .backToQuestionsButton{
+    font-size: 3vw;
+  }
+
+ 
+  .backToOptionsButton{
+    font-size: 3vw;
+  }
 }
 
 @media screen and (max-width: 480px) {
@@ -399,3 +444,5 @@
     text-align: left; /* Center-align text for smaller screens */
   }
 }
+
+
