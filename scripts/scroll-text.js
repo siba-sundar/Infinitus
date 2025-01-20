@@ -2,7 +2,7 @@ const scrollText = document.querySelector(".scroll-text");
 const slider = document.querySelector(".slider");
 
 if (scrollText && slider) {
-  const texts = ["Scroll", "Scrollll", "scrollllll"];
+  const texts = ["Scroll", "Scroll", "scroll"];
   let index = 0;
   let textUpdateTimeout = null;
 
