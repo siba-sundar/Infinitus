@@ -5,8 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Infinitus '25</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="res.css">
+    <link rel="stylesheet" href="../styles/style.css">
+    <link rel="stylesheet" href="../styles/res.css">
 
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollToPlugin.min.js"></script>
@@ -14,8 +14,8 @@
 
 </head>
 
-<body>
-   <img style="z-index: -1;"  src="./assets/noise-2.gif" class="noise">
+<body style="background-color: black;">
+   <img style="z-index: -1;"  src="../assets/noise-2.gif" class="noise">
     <audio id="hover-music" src="./music/link-music.wav" preload="auto"></audio>
 
     <div class="menu-overlay" data-overlay>
@@ -34,12 +34,12 @@
                 </div>
                 <div class="menu-links-new">
                     <div class="container">
-                        <a href="index.html" class="text">Index</a>
+                        <a href="../index.html" class="text">Index</a>
                         <a href="proshows.html" class="text">Pro Shows</a>
                         <a href="technical-events.html" class="text">Events</a>
-                        <a href="index.html" class="text">HackSRM</a>
+                        <a href="https://hacksrm25.vercel.app/" class="text">HackSRM</a>
                         <a href="teams.html" class="text">Team</a>
-                        <a href="index.html" class="text">FAQ</a>
+                        <a href="faq.html" class="text">FAQ</a>
                     </div>
 
                 </div>
@@ -64,7 +64,7 @@
             <div class="navbar-left">
                 <!-- Logo Link -->
                 <a href="index.html" class="nav-logo">
-                    <img src="imgs/official.png" alt="Logo" class="logo">
+                    <img src="../imgs/official.webp" alt="Logo" class="logo">
                 </a>
                 <!-- Navigation Links -->
                 <a class="nav-link" id="timeDisplay"></a>
@@ -79,7 +79,7 @@
 
         <div class="about-grid">
             <div class="about-left">
-                <img src="./imgs/director.jpg">
+                <img src="../imgs/director.jpg">
             </div>
             <div class="about-right">
                 <p>
@@ -94,11 +94,17 @@
         </div>
     </div>
     
-    <script src="main.js"></script>
-    <script src="menu.js"></script>
-    <script src="music.js"></script>
-    <script src="link-hover.js"></script>
-    <script src="flicker.js"></script>
+    <script src="/scripts/favicon.js"></script>    
+   
+    <script src="/scripts/cursor.js"></script>
+    <script src="/scripts/menu.js"></script>
+    <script src="/scripts/time.js"></script>
+    <script src="/scripts/events-slider.js"></script>
+    <script src="/scripts/events-panels.js"></script>
+
+    <script src="/scripts/link-hover.js"></script>
+    <script src="/scripts/music.js"></script>
+    <script src="/scripts/scroll-text.js"></script>
 </body>
 
 </html>
