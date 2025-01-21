@@ -2069,18 +2069,10 @@ marquee {
 }
 
 .about-us-txt {
-<<<<<<< HEAD
-  font-size: 3.5vw;
-  font-family: 'Monument', sans-serif;
-  letter-spacing: 1px;
-  word-spacing: 120px;
-  line-height: 100%;
-=======
   font-size: 1.5vw;
   font-family: 'Monument', sans-serif;
   letter-spacing: 1px;
   line-height: 50px;
->>>>>>> 818a8f3a181c6b5b16a3bdf303bd1b9fe3fbdd23
   object-fit: contain;
   text-transform: uppercase;
   color: #7b7b7b;
