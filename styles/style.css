@@ -1299,12 +1299,10 @@ h4 {
   /* Optional padding for grid items */
   position: absolute;
   /* Overlay on top of video */
-  top: 40%;
+  top: 90%;
   transform: scale(0.8);
   /* Scaled grid */
   z-index: 1000;
-  /* Ensure grid is above the video */
-  /* background-color: orange; */
 }
 
 .grid-item {
@@ -2055,16 +2053,15 @@ marquee {
 .section-3 {
   height: auto;
   width: 100%;
-  background-color: #040404;
   position: relative;
 }
 
 .about-us-txt {
-  font-size: 50px;
+  font-size: 3.5vw;
   font-family: 'Monument', sans-serif;
   letter-spacing: 1px;
   word-spacing: 120px;
-  line-height: 60px;
+  line-height: 100%;
   object-fit: contain;
 
 }
@@ -2104,6 +2101,11 @@ marquee {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+
+.about-left video{
+  width: 40vw;
 }
 
 .about-left img{
