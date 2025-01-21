@@ -11,7 +11,7 @@ if (!container) {
     const newItem = document.createElement("div");
     newItem.className = "item";
 
-    const size = Math.max(window.innerWidth, window.innerHeight) * 0.09;
+    const size = Math.max(window.innerWidth, window.innerHeight) * 0.13;
     newItem.style.width = `${size}px`;
     newItem.style.height = `${size}px`;
     newItem.style.left = `${x - size / 2}px`;
@@ -19,7 +19,7 @@ if (!container) {
 
     const img = document.createElement("img");
     img.src = `../cursor_imgs/${imageIndex}.webp`;
-    img.style.objectFit = "cover";
+    img.style.objectFit = "contain";
     newItem.appendChild(img);
 
     imageIndex = (imageIndex % 16) + 1;
@@ -40,7 +40,7 @@ if (!container) {
 
     gsap.to(".item", {
       y: window.innerHeight * 1.5,
-      scale: 0.5,
+      scale: 1,
       opacity: 0,
       duration: 0.5,
       stagger: 0.025,
