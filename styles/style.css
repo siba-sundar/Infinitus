@@ -2010,6 +2010,10 @@ button {
   background-color: transparent;
 }
 
+.director-img{
+  filter: grayscale(100%);
+}
+
 .scroll-text {
   font-size: 15VW;
   /* Default font size */
@@ -2068,19 +2072,18 @@ marquee {
 }
 
 .about-us-txt {
-  font-size: 50px;
+  font-size: 1.5vw;
   font-family: 'Monument', sans-serif;
   letter-spacing: 1px;
-  word-spacing: 120px;
   line-height: 50px;
   object-fit: contain;
   text-transform: uppercase;
-  color: #fdfdfd;
+  color: #7b7b7b;
 }
 
 .about-us-para{
   text-transform: uppercase;
-  color:#fdfdfd;
+  color:#7b7b7b;
 }
 
 .about-grid {
@@ -2091,7 +2094,7 @@ marquee {
   /* Space between columns */
   align-items: center;
   padding: 120px;
-  
+  margin-top: -5%;
 }
 
 
