@@ -52,7 +52,7 @@ document.addEventListener("DOMContentLoaded", () => {
       })
       .fromTo(
         ".index-vid",
-        {  opacity: 0,scale:0.5, y:500,},
+        {  opacity: 0,scale:0.5, y:500,filter:"blur(10px)"},
         {
           y:0,
           scale:1,
