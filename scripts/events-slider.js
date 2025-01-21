@@ -16,11 +16,8 @@ let totalSlides = slides.length;
 
 // Variables for touch events
 let touchStartX = 0;
-let touchStartY = 0;
 let touchEndX = 0;
-let touchEndY = 0;
 let touchDeltaX = 0;
-let touchDeltaY = 0;
 let isMobile = false;
 
 function detectMobileDevice() {
@@ -60,7 +57,6 @@ function culturalUpdateScaleAndPosition() {
     const centerPosition = (rect.left + rect.right) / 2;
     const distanceFromCenter = centerPosition - window.innerWidth / 2;
 
-    // Basic scale logic (unchanged)
     let scale, offsetX;
     if (distanceFromCenter > 0) {
       scale = Math.min(1.75, 1 + distanceFromCenter / window.innerWidth);
@@ -70,7 +66,6 @@ function culturalUpdateScaleAndPosition() {
       offsetX = 0;
     }
 
-    // ====== 3D Depth + optional rotation ======
     const zOffset = -0.1 * Math.abs(distanceFromCenter);
     const rotateY = 0.03 * distanceFromCenter;
 
@@ -86,16 +81,10 @@ function culturalUpdateScaleAndPosition() {
 
 /* 4) Main animation loop */
 function culturalUpdate() {
-  // Dampen the velocity for a smoother "inertia" effect
   velocity *= friction;
-
-  // Apply velocity to the target
   culturalTarget += velocity;
-
-  // Smoothly move current towards target
   culturalCurrent = culturalLerp(culturalCurrent, culturalTarget, culturalEase);
 
-  // Wrap-around logic
   if (culturalCurrent > singleSetWidth) {
     culturalCurrent -= singleSetWidth;
     culturalTarget -= singleSetWidth;
@@ -104,12 +93,10 @@ function culturalUpdate() {
     culturalTarget += singleSetWidth;
   }
 
-  // Position the slider
   gsap.set(culturalSliderWrapper, {
     x: -culturalCurrent,
   });
 
-  // Update slides scale/position with 3D effect
   culturalUpdateScaleAndPosition();
 
   requestAnimationFrame(culturalUpdate);
@@ -127,41 +114,27 @@ window.addEventListener("wheel", (e) => {
   velocity += e.deltaY * velocityMultiplier;
 });
 
-// Touch events -> adjust velocity for mobile
+// Touch events -> adjust velocity for mobile (horizontal scrolling only)
 window.addEventListener("touchstart", (e) => {
   touchStartX = e.touches[0].clientX;
-  touchStartY = e.touches[0].clientY;
 });
 
 window.addEventListener("touchmove", (e) => {
   touchEndX = e.touches[0].clientX;
-  touchEndY = e.touches[0].clientY;
 
-  // Calculate swipe delta (how much the user moved their finger)
   touchDeltaX = touchStartX - touchEndX;
-  touchDeltaY = touchStartY - touchEndY;
 
-  // Use a slower velocity on mobile for smoother scroll
-  const multiplier = isMobile ? mobileVelocityMultiplier : velocityMultiplier;
-
-  // Check if it's a horizontal or vertical swipe
-  if (Math.abs(touchDeltaX) > Math.abs(touchDeltaY)) {
-    // Horizontal swipe (adjust slider)
-    velocity += touchDeltaX * multiplier;
-  } else {
-    // Vertical swipe (also adjust slider, or perform other logic)
-    velocity += touchDeltaY * multiplier;
+  // Only affect horizontal movement on mobile devices
+  if (isMobile) {
+    velocity += touchDeltaX * mobileVelocityMultiplier;
+    e.preventDefault(); // Prevent vertical scrolling on mobile devices
   }
 });
 
 window.addEventListener("touchend", () => {
-  // Reset touch values after touch ends
   touchStartX = 0;
-  touchStartY = 0;
   touchEndX = 0;
-  touchEndY = 0;
   touchDeltaX = 0;
-  touchDeltaY = 0;
 });
 
 /* 7) Initialize */
@@ -170,7 +143,6 @@ duplicateSlides(); // Duplicate slides
 slides = Array.from(document.querySelectorAll(".slide"));
 measureSingleSetWidth(); // Measure the original set width
 
-// Optionally set the total wrapper width
 culturalSliderWrapper.style.width = 2 * singleSetWidth + 560 * 2 + "px";
 
 // Start animation
