@@ -36,27 +36,27 @@ document.addEventListener("DOMContentLoaded", () => {
       .to(
         [loadingText, introOne, introTwo],
         { opacity: 0, duration: 0.3 },
-        "+=0.3"
+        "+=0.5"
       )
-      // Scale out the loading screen
       .to(loadingScreen, {
-        scale: 0.55,
-        y: -500,
         opacity: 0,
+        y:-500,
         duration: 1.5,
+        scale:0.5,
+        filter:"blur(10px)",
         ease: "power3.inOut",
         onComplete: () => {
           loadingScreen.style.display = "none";
           window.scrollTo(0, 0);
         },
       })
-      // Smooth transition to .index-vid scaling in
       .fromTo(
         ".index-vid",
-        { scale: 0.55, opacity: 0, y: 500 },
+        {  opacity: 0,scale:0.5, y:500,},
         {
-          y: 0,
-          scale: 1,
+          y:0,
+          scale:1,
+          filter:"blur(1px)",
           opacity: 1,
           duration: 1.5,
           ease: "power3.inOut",
@@ -68,13 +68,6 @@ document.addEventListener("DOMContentLoaded", () => {
         [flicker, registerBtnContainer],
         { opacity: 0 },
         { opacity: 1, duration: 0.8, ease: "power3.out" },
-        "+=0.1" // Slight delay after .index-vid animation
-      )
-      .fromTo(
-        scrollBanner,
-        { y: -25, opacity: 0 },
-        { y: 0, opacity: 1, duration: 0.4, ease: "power3.out" },
-        "+=0.1"
       )
       .fromTo(
         [navbar, bottomText],
