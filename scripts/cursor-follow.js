@@ -11,7 +11,7 @@ if (!container) {
     const newItem = document.createElement("div");
     newItem.className = "item";
 
-    const size = Math.max(window.innerWidth, window.innerHeight) * 0.08;
+    const size = Math.max(window.innerWidth, window.innerHeight) * 0.09;
     newItem.style.width = `${size}px`;
     newItem.style.height = `${size}px`;
     newItem.style.left = `${x - size / 2}px`;

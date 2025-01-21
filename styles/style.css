@@ -770,10 +770,11 @@ video {
   text-decoration: none;
   cursor: pointer;
   transition: color 0.3s ease;
+  color: #ff0000;
 }
 
 .one-desc-close:hover {
-  color: #ff0000;
+  color: #fff;
 }
 
 .content-wrapper {
@@ -2078,6 +2079,7 @@ marquee {
   /* Space between columns */
   align-items: center;
   padding: 120px;
+  
 }
 
 
@@ -2093,4 +2095,17 @@ marquee {
   width: 500px;
   z-index: 999;
   color: #fdfdfd;
+}
+
+
+
+.about-left{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.about-left img{
+  width: 70%;
+
 }
