@@ -2,9 +2,24 @@ const scrollText = document.querySelector(".scroll-text");
 const slider = document.querySelector(".slider");
 
 if (scrollText && slider) {
-  const texts = ["Scroll", "Scroll", "scroll"];
+  let texts = ["Scroll", "Scroll", "scroll"]; // Default texts
   let index = 0;
   let textUpdateTimeout = null;
+
+  // Update the texts array based on screen width
+  function updateTextsBasedOnScreenWidth() {
+    if (window.innerWidth <= 1000) {
+      texts = ["Horizontal Scroll", "Horizontal Scroll", "Horizontal Scroll"];
+    } else {
+      texts = ["Scroll", "Scroll", "scroll"];
+    }
+  }
+
+  // Call this function initially to set the texts array
+  updateTextsBasedOnScreenWidth();
+
+  // Also, update the texts if the window is resized
+  window.addEventListener("resize", updateTextsBasedOnScreenWidth);
 
   function isElementInViewport(element, threshold = 0.5) {
     const rect = element.getBoundingClientRect();

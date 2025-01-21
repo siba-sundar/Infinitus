@@ -2007,7 +2007,6 @@ button {
   /* Default font size */
   font-family: 'Helvetica', sans-serif;
   letter-spacing: 0.1px;
-  line-height: 24px;
   color: #8c8c8c;
   text-align: left;
   text-transform: uppercase;
@@ -2017,6 +2016,8 @@ button {
   z-index: 1000;
   transform: translate(-50%, -50%);
   font-family: "VCR";
+  text-align: center;
+  line-height: 100%;
 }
 
 marquee {
