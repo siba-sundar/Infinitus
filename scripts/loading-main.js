@@ -24,13 +24,12 @@ document.addEventListener("DOMContentLoaded", () => {
         introOne,
         { x: "-500%", opacity: 0 },
         { x: "0%", opacity: 1, duration: 1, ease: "power3.out" },
-        "-=0.5"
       )
       .fromTo(
         introTwo,
         { x: "500%", opacity: 0 },
         { x: "0%", opacity: 1, duration: 1, ease: "power3.out" },
-        "-=0.5"
+        "-=1"
       )
       .to(loadingText, { opacity: 1, duration: 0.5 }, "-=0.3")
       .to(
@@ -58,7 +57,7 @@ document.addEventListener("DOMContentLoaded", () => {
           scale:1,
           filter:"blur(1px)",
           opacity: 1,
-          duration: 1.5,
+          duration: 1,
           ease: "power3.inOut",
         },
         "-=0.5" // Overlap with loading screen animation for smoothness
