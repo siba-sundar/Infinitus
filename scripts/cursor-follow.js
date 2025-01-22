@@ -20,6 +20,7 @@ if (!container) {
     const img = document.createElement("img");
     img.src = `../cursor_imgs/${imageIndex}.webp`;
     img.style.objectFit = "contain";
+    img.style.overflow = "hidden";
     newItem.appendChild(img);
 
     imageIndex = (imageIndex % 16) + 1;
@@ -42,7 +43,7 @@ if (!container) {
       y: window.innerHeight * 1.5,
       scale: 1,
       opacity: 0,
-      duration: 0.5,
+      duration: 1,
       stagger: 0.025,
       onComplete: function () {
         this.targets().forEach((item) => {
