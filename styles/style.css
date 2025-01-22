@@ -2183,12 +2183,12 @@ marquee {
   line-height: 50px;
   object-fit: contain;
   text-transform: uppercase;
-  color: #7b7b7b;
+  color: #fdfdfd;
 }
 
 .about-us-para{
   text-transform: uppercase;
-  color:#7b7b7b;
+  color:#fdfdfd;
 }
 
 .about-grid {
