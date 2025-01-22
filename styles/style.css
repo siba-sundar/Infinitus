@@ -123,23 +123,19 @@ video {
 }
 
 
-.ev-one,
-.ev-two {
-  opacity: 0;
+.ev-one{
   position: fixed;
-  margin: 10px;
-  top: 40%; /* Adjust based on design */
-  left: 50%; /* Starting position */
-  transform: translate(-50%, -50%);
-  font-size: 2.5vw  ;
+  top:43%;
+  font-size: 2.5vw;
   font-family: "Monument", sans-serif;
   text-transform: uppercase;
-  word-spacing: 100px;
   letter-spacing: 1px;
   color: #d9d9d9;
+  line-height: 1;
+  text-align: center;
   z-index: 1000;
-  margin-top: -1vh;
-  /* mix-blend-mode: difference; */
+  left: 50%;
+  transform:translate(-50%,-50%);
 }
 
 .ev-one-fix,
@@ -1107,8 +1103,9 @@ h6 {
 .slide {
   width: 400px;
   height: 570px;
-  background: transparent;
+  background-color: transparent;
   flex-shrink: 0;
+  overflow: hidden;
   will-change: transform;
   backface-visibility: hidden;
 }
