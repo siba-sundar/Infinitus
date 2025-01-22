@@ -155,7 +155,7 @@ document.addEventListener("DOMContentLoaded", init);
       optionsHeading.textContent = jumbled;
       if (currentText.length < finalText.length) {
         currentText += finalText[currentText.length];
-        setTimeout(scrambleText, 100); // Speed of jumbled effect
+        setTimeout(scrambleText, 150); // Speed of jumbled effect
       } else {
         optionsHeading.textContent = finalText; // Final text after scrambling
       }
@@ -192,7 +192,7 @@ document.addEventListener("DOMContentLoaded", init);
                   } else {
                     clearInterval(typingInterval);
                   }
-                }, 50);  // Speed of typing effect
+                }, 150);  // Speed of typing effect
               }
             });
           });
