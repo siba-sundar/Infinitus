@@ -135,7 +135,7 @@ document.addEventListener("DOMContentLoaded", init);
       ],
       accommodation: [
         { question: "Will accommodation be provided for participants from other universities?", answer: "Yes, accommodation will be provided for participants from other universities" },
-        { question: "Are there any accommodation charges?", answer: "Yes, the charges for accommodation is 300 Rs per day which includes the food provision in mess as well." },
+        { question: "Are there any accommodation charges?", answer: "No, the accommodation charges are included with the mess pass." },
         { question: "Will food be included along with the accommodation?", answer: "Yes, the food in the mess is included along with the accommodation." },
       ]
     };
@@ -286,7 +286,7 @@ document.addEventListener("DOMContentLoaded", init);
         ],
         accommodation: [
           { question: "Will accommodation be provided for participants from other universities?", answer: "Yes, accommodation will be provided for participants from other universities" },
-          { question: "Are there any accommodation charges?", answer: "Yes, the charges for accommodation is 300 Rs per day which includes the food provision in mess as well." },
+          { question: "Are there any accommodation charges?", answer: "No, the accommodation charges are included with the mess pass." },
           { question: "Will food be included along with the accommodation?", answer: "Yes, the food in the mess is included along with the accommodation." },
         ]
       };
