@@ -138,6 +138,7 @@ video {
   letter-spacing: 1px;
   color: #d9d9d9;
   z-index: 1000;
+  margin-top: -1vh;
   /* mix-blend-mode: difference; */
 }
 
@@ -172,6 +173,15 @@ video {
   line-height: 1.3;
 }
 
+
+.laptop-scroll-text{
+  display: block;
+
+}
+
+.phone-scroll-text{
+  display: none;
+}
 
 .h-scroll {
   font-family: "Akkurat", sans-serif;

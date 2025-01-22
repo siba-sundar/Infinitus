@@ -509,6 +509,14 @@
     word-spacing: 1vw;
     line-height: 120%;
   }
+
+  .laptop-scroll-text{
+    display: none;
+  }
+
+  .phone-scroll-text{
+    display: block;
+  }
   
 }
 
@@ -530,9 +538,16 @@
 
 
 @media (max-width: 500px) {
-  .ev-one,
+  .ev-one{
+    font-size: 6vw; /* Adjust font size for smaller screens */
+    line-height: 1;
+    text-align: center;
+  }
+
   .ev-two {
     font-size: 6vw; /* Adjust font size for smaller screens */
     line-height: 0.7;
   }
 }
+
+
