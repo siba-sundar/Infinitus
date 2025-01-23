@@ -265,7 +265,24 @@
   .questionItem{
     font-size: 2vw;
   }
+
+  .about-grid{
+    margin-top: -13%;
+  }
+
   
+}
+
+@media screen and (max-width:700px) {
+  .about-grid{
+    margin-top: -20%;
+  }
+}
+
+@media screen and (max-width:500px) {
+  .about-grid{
+    margin-top: -30%;
+  }
 }
 
 
