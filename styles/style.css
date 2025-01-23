@@ -829,6 +829,9 @@ video {
   color: #ff0000;
   /* Hover effect color */
 }
+.text.active {
+  color: #ff0000; /* Active link color */
+}
 
 .progress-bar {
   position: fixed;
