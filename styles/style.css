@@ -2201,13 +2201,12 @@ marquee {
 
 .about-grid {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  /* Two equal columns */
-  gap: 20px;
-  /* Space between columns */
+  grid-template-columns: 1fr 1fr; /* 2 equal columns */
+  gap: 20px; /* Space between columns */
   align-items: center;
   padding: 120px;
   margin-top: -5%;
+  grid-auto-rows: auto; /* Automatically adjust row height */
 }
 
 
@@ -2217,7 +2216,7 @@ marquee {
   justify-content: center;
 }
 
-.about-right p {
+.about-right p,.about-left p{
   font-size: 0.8vw;
   line-height: 1.5;
   width: 500px;
@@ -2241,4 +2240,25 @@ marquee {
 .about-left img{
   width: 70%;
 
+}
+
+.infinitus-txt{
+  font-family: 'Akkurat',sans-serif;
+  font-size: 0.8vw;
+  line-height: 1.5;
+  text-transform: uppercase;
+  text-align: left;
+  margin-left: 5%;
+  margin-top: 5%;
+  width: 90%;
+}
+
+.abt-vid{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  /* transform: scale(0.8); */
+  filter: blur(0.25px);
+  margin-top: 5%;
+  margin-bottom: 5%;
 }
