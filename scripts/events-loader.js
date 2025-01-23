@@ -23,7 +23,7 @@ document.addEventListener("DOMContentLoaded", () => {
     )
     .to(
       eventsLoader, // Fade out events-loader and move it upward
-      { opacity: 0, y: "-100", duration: 1, ease: "power3.out" }
+      { opacity: 0, duration: 1, ease: "power3.out" }
     )
     .set(eventsLoader, { display: "none" }); // Set display to none after animations
 });
