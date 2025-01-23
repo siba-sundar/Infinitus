@@ -119,17 +119,24 @@ document.addEventListener("DOMContentLoaded", init);
     // Data for questions and answers
     const questionData = {
       registration: [
-        { question: "How do I register?", answer: "You can register online via our website." },
-        { question: "What documents are required?", answer: "You need a government-issued ID and proof of address." }
+        { question: "How do I register for Infinitus?", answer: "Through our ticketing partner unifest." },
+        { question: "Is the registration free of cost?", answer: "It is free of cost for SRM students though some events have charges." },
+        { question: "How much is the event registration fee for students from other universities?", answer: "It is variable based on events ranging from 100 to 300." },
+        { question: "When does the registration end?", answer: "Some competitions registrations end on feb 1st, others are open for on spot registrations." },
+        { question: "Are on-spot registrations available?", answer: "Yes, they are available for some competitions" },
       ],
       verification: [
-        { question: "How to verify my account?", answer: "You can verify your account via email or SMS." }
+        { question: "What is required for identity verification?", answer: "College id card is mandatory for campus entrance." },
+        { question: "Do we get a registration confirmation mail?", answer: "Yes, you will get a mail from unifest after payment confirmation." },
       ],
       participation: [
-        { question: "How do I participate?", answer: "You can participate by registering on our platform." }
+        { question: "Is there a separate participation fee for outside students?", answer: "Yes, it can be found on our ticketing platform, unifest" },
+        { question: "How do I contact organizers regarding any questions or concerns?", answer: "You can reach out to the organizers at sc@srmap.edu.in for any questions or concerns." },
       ],
       accommodation: [
-        { question: "Is accommodation provided?", answer: "Yes, accommodation will be provided for participants." }
+        { question: "Will accommodation be provided for participants from other universities?", answer: "Yes, accommodation will be provided for participants from other universities" },
+        { question: "Are there any accommodation charges?", answer: "No, the accommodation charges are included with the mess pass." },
+        { question: "Will food be included along with the accommodation?", answer: "Yes, the food in the mess is included along with the accommodation." },
       ]
     };
 
@@ -155,7 +162,7 @@ document.addEventListener("DOMContentLoaded", init);
       optionsHeading.textContent = jumbled;
       if (currentText.length < finalText.length) {
         currentText += finalText[currentText.length];
-        setTimeout(scrambleText, 150); // Speed of jumbled effect
+        setTimeout(scrambleText, 100); // Speed of jumbled effect
       } else {
         optionsHeading.textContent = finalText; // Final text after scrambling
       }
@@ -192,7 +199,7 @@ document.addEventListener("DOMContentLoaded", init);
                   } else {
                     clearInterval(typingInterval);
                   }
-                }, 150);  // Speed of typing effect
+                }, 50);  // Speed of typing effect
               }
             });
           });
@@ -262,19 +269,26 @@ document.addEventListener("DOMContentLoaded", init);
 
       // Data for questions and answers
       const questionData = {
-          registration: [
-              { question: "How do I register?", answer: "You can register online via our website." },
-              { question: "What documents are required?", answer: "You need a government-issued ID and proof of address." }
-          ],
-          verification: [
-              { question: "How to verify my account?", answer: "You can verify your account via email or SMS." }
-          ],
-          participation: [
-              { question: "How do I participate?", answer: "You can participate by registering on our platform." }
-          ],
-          accommodation: [
-              { question: "Is accommodation provided?", answer: "Yes, accommodation will be provided for participants." }
-          ]
+        registration: [
+          { question: "How do I register for Infinitus?", answer: "Through our ticketing partner unifest." },
+          { question: "Is the registration free of cost?", answer: "It is free of cost for SRM students though some events have charges." },
+          { question: "How much is the event registration fee for students from other universities?", answer: "It is variable based on events ranging from 100 to 300." },
+          { question: "When does the registration end?", answer: "Some competitions registrations end on feb 1st, others are open for on spot registrations." },
+          { question: "Are on-spot registrations available?", answer: "Yes, they are available for some competitions" },
+        ],
+        verification: [
+          { question: "What is required for identity verification?", answer: "College id card is mandatory for campus entrance." },
+          { question: "Do we get a registration confirmation mail?", answer: "Yes, you will get a mail from unifest after payment confirmation." },
+        ],
+        participation: [
+          { question: "Is there a separate participation fee for outside students?", answer: "Yes, it can be found on our ticketing platform, unifest" },
+          { question: "How do I contact organizers regarding any questions or concerns?", answer: "You can reach out to the organizers at sc@srmap.edu.in for any questions or concerns." },
+        ],
+        accommodation: [
+          { question: "Will accommodation be provided for participants from other universities?", answer: "Yes, accommodation will be provided for participants from other universities" },
+          { question: "Are there any accommodation charges?", answer: "No, the accommodation charges are included with the mess pass." },
+          { question: "Will food be included along with the accommodation?", answer: "Yes, the food in the mess is included along with the accommodation." },
+        ]
       };
 
       // Animating the intro text and heading
