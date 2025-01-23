@@ -13,6 +13,20 @@
 <body>
     <div class="main-content">
 
+        
+        <div class="events-loader">
+            <img src="/assets/noise-2.gif" class="noise">
+            <div class="ev-one">Need<br> help?</div>
+    
+            <div class="h-scroll">
+                Find answers to your questions here.
+            </div>
+    
+            <div class="items">
+    
+            </div>
+        </div>
+
         <img src="../assets/noise-2.gif" class="noise">
         <audio id="hover-music" src="./music/link-music.wav" preload="auto"></audio>
 
@@ -55,15 +69,14 @@
                     </div>
                     <div class="menu-links-new">
                         <div class="container">
-                            <a href="../index.html" class="text">Index</a>
-                            <a href="aboutus.html" class="text">About</a>
-                            <a href="proshows.html" class="text">Pro Shows</a>
-                            <a href="Events.html" class="text">Events</a>
-                            <a href="teams.html" class="text">Team</a>
-                            <a href="https://hacksrm25.vercel.app/" class="text">HackSRM</a>
-                            <a href="faq.html" class="text" style="color: red;">FAQ</a>
+                            <a href="../index.html" class="text" id="index">Index</a>
+                            <a href="aboutus.html" class="text" id="about">About</a>
+                            <a href="proshows.html" class="text" id="proshows">Pro Shows</a>
+                            <a href="Events.html" class="text" id="events">Events</a>
+                            <a href="teams.html" class="text" id="team">Team</a>
+                            <a href="https://hacksrm25.vercel.app/" class="text" id="hack">HackSRM</a>
+                            <a href="faq.html" class="text" id="faq">FAQ</a>
                         </div>
-
                     </div>
                     <div class="menu-links-new-2">
                         <div class="column">
@@ -159,8 +172,8 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
     <script src="https://unpkg.com/lenis@1.1.14/dist/lenis.min.js"></script>
 
-
-
+    <script src="/scripts/events-loader.js"></script>
+    <script src="/scripts/cursor-follow.js"></script>
 
     <script src="/scripts/favicon.js"></script>    
     <script src="../scripts/cursor.js"></script>
