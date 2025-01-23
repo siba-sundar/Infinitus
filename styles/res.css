@@ -432,7 +432,7 @@
 
 
 @media screen and (max-width:600px) {
-  .about-right p {
+  .about-right p ,.about-left p{
     font-size: 1.8vw;
     width: 300px;
     text-align: left;
@@ -449,7 +449,7 @@
 }
 
 @media screen and (max-width: 480px) {
-  .about-right p {
+  .about-right p,.about-left {
     font-size: 2.5vw;
     text-align: left; /* Center-align text for smaller screens */
   }
@@ -461,11 +461,11 @@
     width: 25vw;
   }
 
-  .about-right .about-us-para{
+  .about-right .about-us-para,.about-left .about-us-para, .infinitus-txt{
     font-size: 1.3vw;
   }
 
-  .about-right{
+  .about-right,.about-left{
     padding-left: 3vw;
     
   }
@@ -481,34 +481,37 @@
     padding-top: 14vh;
     justify-content: flex-start;
     align-items: flex-start;
-    padding-left: 14vw;
+    padding-left: 8vw;
   }
-  .about-right{
+  .about-right,.about-left{
     padding-left: 0;
   }
 
-  .about-right .about-us-para {
-    font-size: 2.2vw;
+  .about-right .about-us-para, .about-left .about-us-par{
+    width: 80%;
+  }
+
+  .about-right .about-us-para, .about-left .about-us-para, .infinitus-txt {
+    font-size: 1.6vw;
     text-align: left;
     padding-bottom: 40px;
   }
 
-  .about-left{
+  .about-left,.about-right{
     justify-content: flex-start;
   }
 
 
-  .about-left img{
+  .about-left img,.about-left img{
     width: 40vw;
   }
 
-  
-
   .about-us-txt{
-    font-size: 6vw;
+    font-size: 5vw;
     word-spacing: 1vw;
     line-height: 120%;
   }
+  
 
   .laptop-scroll-text{
     display: none;
@@ -518,6 +521,14 @@
     display: block;
   }
   
+}
+
+@media screen and (max-width: 800px){
+  .about-right .about-us-para, .about-left .about-us-para, .infinitus-txt {
+    font-size: 1.8vw;
+    text-align: left;
+    padding-bottom: 40px;
+  }
 }
 
 @media (max-width: 1200px) {
@@ -542,6 +553,15 @@
     margin-top: 2%;
     text-align: center;
   }
+
 }
 
 
+@media screen and (max-width: 600px){
+  .about-right .about-us-para, .about-left .about-us-para, .infinitus-txt {
+    font-size: 2.5vw;
+    text-align: left;
+    padding-bottom: 40px;
+  }
+
+}
