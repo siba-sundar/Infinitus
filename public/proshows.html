@@ -12,7 +12,38 @@
 
 <body>
     <div class="main-content">
+
+        <div class="events-loader">
+            <img src="/assets/noise-2.gif" class="noise">
+            <div class="ev-one">Pro<br> Shows </div>
+    
+            <div class="h-scroll laptop-scroll-text">
+                Navigate by scrolling to discover events.
+            </div>
+
+            <div class="h-scroll phone-scroll-text">
+                Navigate by scrolling sideways to discover events.
+            </div>
+    
+            <div class="items">
+    
+            </div>
+        </div>
+
         <div class="section-1">
+
+            <div id="flicker" class="scroll-text">
+
+                <p>Scroll</p>
+            </div>
+            <div class="h-scroll-fix laptop-scroll-text">
+                Navigate by scrolling to discover events.
+            </div>
+
+            <div class="h-scroll-fix phone-scroll-text">
+                Navigate by scrolling sideways to discover events.
+            </div>
+            <img src="../assets/noise-2.gif" class="noise">
 
             <audio id="hover-music" src="./music/link-music.wav" preload="auto"></audio>
 
@@ -54,15 +85,14 @@
                         </div>
                         <div class="menu-links-new">
                             <div class="container">
-                                <a href="../index.html" class="text">Index</a>
-                                <a href="aboutus.html" class="text">About</a>
-                                <a href="proshows.html" class="text" style="color: red;">Pro Shows</a>
-                                <a href="Events.html" class="text">Events</a>
-                                <a href="teams.html" class="text">Team</a>
-                                <a href="https://hacksrm25.vercel.app/" class="text">HackSRM</a>
-                                <a href="faq.html" class="text">FAQ</a>
+                                <a href="../index.html" class="text" id="index">Index</a>
+                                <a href="aboutus.html" class="text" id="about">About</a>
+                                <a href="proshows.html" class="text" id="proshows">Pro Shows</a>
+                                <a href="Events.html" class="text" id="events">Events</a>
+                                <a href="teams.html" class="text" id="team">Team</a>
+                                <a href="https://hacksrm25.vercel.app/" class="text" id="hack">HackSRM</a>
+                                <a href="faq.html" class="text" id="faq">FAQ</a>
                             </div>
-    
                         </div>
                         <div class="menu-links-new-2">
                             <div class="column">
@@ -82,25 +112,27 @@
 
             <!-- content goes here -->
 
-            <div class="carousel" id="proshows">
-                <!-- <img src="./assets/noise-2.gif" class="noise"> -->
+            <div class="slider">
+                <div class="slider-wrapper">
+                    <div class="slide" data-title="Cyber Sway"
+                        data-desc="A national-level dance competition celebrating creativity and expression. From classical solos to high-energy western group acts, participants showcase diverse styles. The stage is set for artistry, passion, and innovation to shine. Bring your best moves and mesmerize the crowd. Dance your way to glory at INFINITUS!"
+                        data-img="../Posters/Cybersway.webp" data-img2="./assets/img2.webp">
+                       <img src="../assets/proshow-mobile-bg.webp" alt="img3" />
 
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <img src="../assets/proshow-bg.webp" alt="Slide 1" class="pro-img-desktop">
-                        <img src="../assets/proshow-mobile-bg.webp" alt="" class="pro-img-mobile">
-                        <p class="caption"></p>
                     </div>
-                    <div class="carousel-item">
-                        <img src="../assets/proshow-bg.webp" alt="Slide 2" class="pro-img-desktop">
-                        <img src="../assets/proshow-mobile-bg.webp" alt="" class="pro-img-mobile">
-                        <p class="caption"></p>
+                    <div class="slide" data-title="Cyber Groove' 25"
+                        data-desc="An electrifying music competition hosted by OneHeart, SRM's Music Club. This platform brings together talent from across genres like classical, pop, rock, and fusion. Experience soul-stirring performances that celebrate rhythm and harmony. A stage for aspiring musicians to shine. Let music echo your passion at INFINITUS!"
+                        data-img="../Posters/Cyber groove.webp" data-img2="./assets/img3.webp">
+                       <img src="../assets/proshow-mobile-bg.webp" alt="img3" />
+
                     </div>
-                    <div class="carousel-item">
-                        <img src="../assets/proshow-bg.webp" alt="Slide 3" class="pro-img-desktop">
-                        <img src="../assets/proshow-mobile-bg.webp" alt="" class="pro-img-mobile">
-                        <p class="caption"></p>
+                    <div class="slide" data-title="Cyber Vogue"
+                        data-desc="A fashion walk competition celebrating style, individuality, and confidence. Participants flaunt their unique flair through themed rounds like Cyberpunk Fusion and Rapid-Fire Fashion. From power walks to creative talents, this event highlights bold personalities. A celebration of self-expression and creativity. Walk the runway, own the stage, and dazzle the crowd!"
+                        data-img="../Posters/Cyber vogue.webp" data-img2="./assets/img4.webp">
+                       <img src="../assets/proshow-mobile-bg.webp" alt="img3" />
+
                     </div>
+
                 </div>
             </div>
 
@@ -147,16 +179,18 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/CustomEase.min.js"></script>
 
 
-
-
-    <script src="/scripts/favicon.js"></script>    
+    <script src="/scripts/events-loader.js"></script>
+    <script src="/scripts/cursor-follow.js"></script>
+    <script src="/scripts/favicon.js"></script>
     <script src="/scripts/cursor.js"></script>
     <script src="/scripts/menu.js"></script>
     <script src="/scripts/time.js"></script>
-    <script src="/scripts/proshows.js"></script>
+    <script src="/scripts/handle-slider.js"></script>
+    <script src="/scripts/events-panels.js"></script>
 
     <script src="/scripts/link-hover.js"></script>
     <script src="/scripts/music.js"></script>
+    <script src="/scripts/scroll-text.js"></script>
     
 </body>
 
