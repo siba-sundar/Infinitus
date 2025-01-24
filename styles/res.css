@@ -584,13 +584,3 @@
   }
 
 }
-
-@media screen and (max-width: 900px){
-  #index-loading-laptop{
-    display: block;
-    }
-
-#index-loading-mobile{
-  display: block;
-  }
-}
