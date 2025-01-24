@@ -8,12 +8,12 @@ document.addEventListener("DOMContentLoaded", () => {
   evTimeline
     .fromTo(
       evOne, // Animation for ev-one
-      { opacity: 0 }, // Start with 0 opacity
+      {delay:1, opacity: 0 }, // Start with 0 opacity
       { opacity: 1, duration: 1.5, ease: "power3.out" } // Fade in ev-one
     )
     .fromTo(
       hScroll, // Animation for h-scroll
-      { opacity: 0 }, // Start with 0 opacity
+      {delay:1, opacity: 0 }, // Start with 0 opacity
       { opacity: 1, duration: 1, ease: "power3.out" }, // Fade in h-scroll
       "-=0.5" // Overlap the animations slightly
     )
