@@ -204,6 +204,7 @@ video {
   letter-spacing: 1px;
   color: #d9d9d9;
   line-height: 1;
+  opacity: 0;
   text-align: center;
   z-index: 1000;
   transform:translate(-50%,-50%);
