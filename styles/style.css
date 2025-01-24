@@ -247,7 +247,7 @@ video {
   transition: filter 0.1s ease-in-out;
   transform-origin: center;
   background: radial-gradient(circle, rgba(0, 0, 0, 1) 30%, transparent 80%);
-  filter: brightness(0.75);
+  /* filter: brightness(0.75); */
 }
 
 .index-vid-2 {
@@ -263,7 +263,7 @@ video {
   transition: filter 0.1s ease-in-out;
   transform-origin: center;
   background: radial-gradient(circle, rgba(0, 0, 0, 1) 30%, transparent 80%);
-  filter: brightness(0.75);
+  /* filter: brightness(0.75); */
 }
 
 .index-vid-3 {
@@ -279,7 +279,7 @@ video {
   transition: filter 0.1s ease-in-out;
   transform-origin: center;
   background: radial-gradient(circle, rgba(0, 0, 0, 1) 30%, transparent 80%);
-  filter: brightness(0.75);
+  /* filter: brightness(0.75); */
 }
 
 
