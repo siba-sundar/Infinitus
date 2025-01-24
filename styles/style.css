@@ -196,6 +196,21 @@ video {
   line-height: 1.3;
 }
 
+.h-scroll-constant {
+  position: fixed;
+  font-size: 14px;
+  font-family: "Akkurat", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #d9d9d9;
+  line-height: 1;
+  text-align: center;
+  z-index: 1000;
+  transform:translate(-50%,-50%);
+  bottom: 12%;
+  left: 50%;
+}
+
 #timeDisplay{
   font-family: 'VCR',sans-serif;
   /* letter-spacing: 2px; */
@@ -2314,6 +2329,3 @@ marquee {
   margin-bottom: 5%;
 }
 
-#index-loading-mobile{
-display: none;
-}
