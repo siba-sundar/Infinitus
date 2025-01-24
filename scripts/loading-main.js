@@ -32,7 +32,7 @@ document.addEventListener("DOMContentLoaded", () => {
       .to(loadingScreen, { opacity: 0, duration: 0.5, ease: "power3.inOut", onComplete: () => {
         loadingScreen.style.display = "none";
         window.scrollTo(0, 0);
-      }},"-=0.6")
+      }},"-=0.5")
       .fromTo(indexVideo2, 
         { scale: 1, clipPath: "circle(0% at 50% 50%)", opacity: 0, display: "none" }, 
         { clipPath: "circle(75% at 50% 50%)", opacity: 1, display: "block", duration: 0.8, ease: "power3.out" }
