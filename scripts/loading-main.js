@@ -46,6 +46,7 @@ document.addEventListener("DOMContentLoaded", () => {
         { scale:1,clipPath: "circle(0% at 50% 50%)", opacity: 0, duration: 0.5, display: "none" }, 
         { clipPath: "circle(75% at 50% 50%)", opacity: 1, display: "block", duration: 1, ease: "power3.out" }
       )
+     
       
       // Navbar and bottomText animation
       .fromTo([navbar, bottomText], 
