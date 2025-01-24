@@ -18,9 +18,8 @@ document.addEventListener("DOMContentLoaded", () => {
     timeline
       // Play `h-scroll-constant` simultaneously with the video
       .fromTo(hScrollConstant, 
-        { opacity: 0, display: "none" }, 
-        { opacity: 1, display: "block", duration: 2.5, ease: "power3.out" }
-      )
+        { opacity: 0, display: "none" ,}, 
+        { opacity: 1, display: "block", duration: 2.5, ease: "power3.out"} )
       .to(hScrollConstant, 
         { opacity: 0, duration: 1, ease: "power3.inOut" }
       )
