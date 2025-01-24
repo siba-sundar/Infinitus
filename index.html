@@ -15,13 +15,22 @@
     <div class="loading-screen">
         <img src="/assets/noise-2.gif" class="noise">
 
-        <video class="loading-video" autoplay muted>
-            <source src="/assets/cyber-1.webm" type="video/webm">
+        <video class="loading-video" id="index-loading-laptop" autoplay muted>
+            <source src="/assets/desk-intro-vid-compressed-smaller.webm" type="video/webm">
             Your browser does not support the video tag.
         </video>
-        <p>Activate audio for a fully immersive experience.</p>
-        <div class="intro-one">Loading</div>
-        <div class="intro-two">Experience</div>
+
+        <video class="loading-video" id="index-loading-mobile" autoplay muted>
+            <source src="/assets/mobile-compressed-final.webm" type="video/webm">
+            Your browser does not support the video tag.
+        </video>
+
+        <div class="ev-one" id="index-opacity">Loading<br> experience </div> 
+        
+        <div class="h-scroll" id="index-opacity">
+            Enable audio to enhance your experience
+                </div>
+        
     </div>
 
     <img src="/assets/noise-2.gif" class="noise">
@@ -56,8 +65,8 @@
                 <!-- Left Column -->
                 <div class="menu-left">
                     <video class="menu-video" autoplay muted loop>
-                        <source src="./assets/cyber-3.webm" type="video/webm">
-                    </video>
+                        <source src="./assets/cyber-1.webm" type="video/webm">
+                    </video>    
                 </div>
 
                 <div class="menu-right">
@@ -66,7 +75,7 @@
                     </div>
                     <div class="menu-links-new">
                         <div class="container">
-                            <a href="../index.html" class="text" id="index">Index</a>
+                            <a href="../index.html" class="text" id="index" style="color: #ff0000;">Index</a>
                             <a href="/public/aboutus.html" class="text" id="about">About</a>
                             <a href="/public/proshows.html" class="text" id="proshows">Pro Shows</a>
                             <a href="/public/Events.html" class="text" id="events">Events</a>
@@ -90,21 +99,38 @@
                     </div>
                 </div>
             </div>
-        </div>
-
-        <video class="index-vid" autoplay muted loop>
-            <source src="/assets/cyber-1.webm" type="video/webm">
+        </div>  
+        <video  class="index-vid-3" autoplay muted loop>
+            <source src="/assets/valo-2-compressed.webm" type="video/webm">
             Your browser does not support the video tag.
         </video>
 
-        <h2 id="flicker">National level
-            <br>
-            Techno-Cultural
-            <br>
-            Fest '25
+        <video  class="index-vid-2" autoplay muted loop>
+            <source src="/assets/valo-1-compressed.webm" type="video/webm">
+            Your browser does not support the video tag.
+        </video>
+
+        <video  class="index-vid" autoplay muted loop>
+            <source src="/assets/valo-1-compressed.webm" type="video/webm">
+            Your browser does not support the video tag.
+        </video>
+        
+       
+  
+        <h2 id="flicker">
+            <div class="intro-header">
+                National level
+                <br>
+                Techno-Cultural
+                <br>
+                Fest '25
+            </div>
         </h2>
         <div class="register-btn-container">
             <a href="https://unifest.in/fests/44?fest=infinitus%2725" class="register-btn">Register Now</a>
+        </div>
+        <div class="items">
+
         </div>
 
         <div id="music-player">
@@ -137,10 +163,6 @@
                 </a>
             </span>
             <span class="bottom-text__right shuffle-text">2025</span>
-        </div>
-
-        <div class="items">
-
         </div>
 
     </div>
@@ -284,6 +306,7 @@
 
 
     <script src="/scripts/loading-main.js"></script>
+    <script src="/scripts/index-bg.js"></script>
     <script src="/scripts/cursor.js"></script>
     <script src="/scripts/menu.js"></script>
     <script src="/scripts/time.js"></script>
