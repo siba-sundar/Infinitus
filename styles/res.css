@@ -30,6 +30,8 @@
 
   #flicker {
     font-size: 6vw;
+    line-height: 0.9;
+    letter-spacing: 1px;
   }
 
   .register-btn-container {
@@ -581,4 +583,14 @@
     padding-bottom: 40px;
   }
 
+}
+
+@media screen and (max-width: 900px){
+  #index-loading-laptop{
+    display: block;
+    }
+
+#index-loading-mobile{
+  display: block;
+  }
 }
